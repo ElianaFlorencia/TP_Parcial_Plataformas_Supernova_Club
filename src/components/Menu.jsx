@@ -1,9 +1,18 @@
 import { Link } from "react-router-dom"
-
+import { useAuth } from "../context/AuthContext"
+import { useNavigate } from "react-router-dom";
 
 
 export const Menu = () => {
+ 
+    const { logueado, logout } = useAuth();
+    const navigate = useNavigate ();
 
+    const handlerLogout = (e) => {
+      e.preventDefault ();
+      logout ();
+      navigate ("/Login")
+    }
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -20,6 +29,24 @@ export const Menu = () => {
                 <li className="nav-item">
                 <Link className="nav-link" to= "/Contacto"> Contacto </Link>
                 </li>
+
+                { 
+                    (logueado)
+                    ?   <>
+                            <li className="nav-item">
+                                <Link className="nav-link" to= "/Dashboard"> Dashboard </Link>
+                            </li>
+                            <li className="nav-item">
+                                <a href="#" className="nav-link" onClick={handlerLogout}> Logout </a>
+                    
+                            </li>
+                       </>
+                    :
+                        <li className="nav-item">
+                            <Link className="nav-link" to= "/Login"> Login </Link>
+                        </li>
+
+                }
                 <li className="nav-item">
                 <a className="nav-link" href="#">Pricing</a>
                 </li>

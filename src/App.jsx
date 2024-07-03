@@ -8,8 +8,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Inicio } from './pages/Inicio'
 import { Contacto } from './pages/Contacto'
 import { Micuenta } from './pages/Micuenta'
+import { Login } from './pages/Login'
+import { Dashboard } from './pages/Dashboard'
+
 //Menu//
 import { Menu } from './components/Menu'
+
+//Contextos//
+import {AuthProvider} from './context/AuthContext'
 /*
 function App() {
   const [count, setCount] = useState(0)
@@ -46,6 +52,7 @@ export default App
 export const App = () => {
 
   return (
+  <AuthProvider>
    <BrowserRouter>
       <Menu />
         <div className= 'container'> 
@@ -53,9 +60,12 @@ export const App = () => {
               <Route  path='/' element= {<Inicio />} />
               <Route  path='/Contacto' element= {<Contacto/>} />
               <Route  path='/MiCuenta' element= {<Micuenta/>} />
+              <Route  path='/Login' element= {<Login/>} />
+              <Route  path='/Dashboard' element= {<Dashboard/>} />
             </Routes>   
         </div>
    </BrowserRouter>
+   </AuthProvider>
   )
 
 }
