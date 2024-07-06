@@ -11,11 +11,13 @@ import { Micuenta } from './pages/Micuenta'
 import { Login } from './pages/Login'
 import { Dashboard } from './pages/Dashboard'
 
+
 //Menu//
 import { Menu } from './components/Menu'
 
 //Contextos//
 import {AuthProvider} from './context/AuthContext'
+import { ProtectedRoute } from './context/ProtectedRoute'
 /*
 function App() {
   const [count, setCount] = useState(0)
@@ -61,7 +63,13 @@ export const App = () => {
               <Route  path='/Contacto' element= {<Contacto/>} />
               <Route  path='/MiCuenta' element= {<Micuenta/>} />
               <Route  path='/Login' element= {<Login/>} />
-              <Route  path='/Dashboard' element= {<Dashboard/>} />
+              <Route  path='/Dashboard' element= {
+                <ProtectedRoute>
+                  <Dashboard/>
+                </ProtectedRoute>
+                
+                
+                } />
             </Routes>   
         </div>
    </BrowserRouter>
