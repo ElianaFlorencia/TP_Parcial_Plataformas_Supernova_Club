@@ -47,15 +47,13 @@ export const Menu = () => {
                         </li>
 
                 }
-                <li className="nav-item">
-                <a className="nav-link" href="#">Pricing</a>
-                </li>
+                
                 <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="/Micuenta" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown link Mi Cuenta 
+                    Mi Cuenta 
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <Link className="dropdown-item" to= "/Micuenta"> Mi Cuenta </Link>
+                    <Link className="dropdown-item" to= "/Micuenta"> Perfil </Link>
                     
                 </ul>
                 </li>
