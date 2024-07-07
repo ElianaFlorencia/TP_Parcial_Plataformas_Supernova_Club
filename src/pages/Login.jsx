@@ -16,7 +16,7 @@ export const Login = () => {
         <form onSubmit= {(e) => e.preventDefault()}>
             
             <div className="mb-3">
-                <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
+                <label htmlFor="exampleInputEmail1" className="form-label">Email</label>
                 <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                 
             </div>
