@@ -13,9 +13,15 @@ export const Login = () => {
     }
 
     return (
+
+
+        <section id="Login">
+
+            <div id="LoginInterface">
         <form onSubmit= {(e) => e.preventDefault()}>
             
-            <div className="mb-3">
+
+            <div  className="mb-3">
                 <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
                 <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                 
@@ -26,7 +32,13 @@ export const Login = () => {
             </div>
             
             <button type="submit" class="btn btn-primary" onClick={handlerLogin}>Submit</button>
+
+             <div>
+                <p>no tenés cuenta? <a href="Registro.jsx">crear cuenta.</a> </p>
+             </div>
             </form>
+            </div>
+            </section>
     )
 
 }
