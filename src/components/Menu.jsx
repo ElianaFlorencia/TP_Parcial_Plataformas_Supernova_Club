@@ -29,33 +29,30 @@ export const Menu = () => {
                 <li className="nav-item">
                 <Link className="nav-link" to= "/Contacto"> Contacto </Link>
                 </li>
-
-                { 
+                
+                <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="/Micuenta" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Mi Cuenta 
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <Link className="dropdown-item" to= "/Micuenta"> Perfil </Link>
+                    { 
                     (logueado)
                     ?   <>
                             <li className="nav-item">
-                                <Link className="nav-link" to= "/Dashboard"> Dashboard </Link>
+                                <Link className="dropdown-item" to= "/Dashboard"> Dashboard </Link>
                             </li>
                             <li className="nav-item">
-                                <a href="#" className="nav-link" onClick={handlerLogout}> Logout </a>
+                                <a href="#" className="dropdown-item" onClick={handlerLogout}> Logout </a>
                     
                             </li>
                        </>
                     :
                         <li className="nav-item">
-                            <Link className="nav-link" to= "/Login"> Login </Link>
+                            <Link className="dropdown-item" to= "/Login"> Login </Link>
                         </li>
 
                 }
-                <li className="nav-item">
-                <a className="nav-link" href="#">Pricing</a>
-                </li>
-                <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="/Micuenta" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown link Mi Cuenta 
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <Link className="dropdown-item" to= "/Micuenta"> Mi Cuenta </Link>
                     
                 </ul>
                 </li>
