@@ -16,3 +16,12 @@ const firebaseConfig = {
 // Initialize Firebase
 const appFirebase = initializeApp(firebaseConfig);
 export default appFirebase;
+
+
+
+// LOGIN FRONTEND ---------------------------------------------------
+
+
+const exampleInputEmail1 = document.querySelector("#exampleInputEmail1")
+
+exampleInputEmail1.value = "fba147"

@@ -16,7 +16,7 @@ export const Menu = () => {
 
     return (
 
-        
+
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
             <a className="navbar-brand" href="#">Navbar</a>
@@ -49,9 +49,7 @@ export const Menu = () => {
                         </li>
 
                 }
-                <li className="nav-item">
-                <a className="nav-link" href="#">Pricing</a>
-                </li>
+                
                 <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="/Micuenta" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Dropdown link Mi Cuenta 
