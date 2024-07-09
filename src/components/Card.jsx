@@ -21,10 +21,13 @@ const courses = [
   },
 ];
 
+const duplicatedCourses = [...courses, ...courses];
+
+
 const Card = () => {
   return (
     <div className="card--container">
-      {courses.map((item, index) => (
+      {duplicatedCourses.map((item, index) => (
         <div className="card" key={index}>
           <div className="card--cover">{item.icon}</div>
           <div className="card--title">

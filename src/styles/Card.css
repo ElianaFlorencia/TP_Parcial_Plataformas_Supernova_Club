@@ -7,7 +7,7 @@
 }
 
 .card {
-  flex: 1 1 200px;
+  flex: 1 1 calc(33.333% - 20px);
   background: #dde6ed;
   padding: 20px;
   border-radius: 20px;
@@ -33,10 +33,12 @@
   padding: 20px;
   border-radius: 20px;
   color: #969393;
- width: 100%;
-
-
+  width: 100%; /*iconos*/
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+  max-width: 100px; /* Ajusta el tamaño máximo según sea necesario */
+  max-height: 100px; /* Ajusta el tamaño máximo según sea necesario */
 }
+
 
 .card--title {
   background: #ffffffc0;
@@ -52,6 +54,10 @@
   text-align: center;
   flex-grow: 1; 
   overflow: hidden; 
+
+
+  margin: 0 auto; /*titulos de deportes*/
+  max-width: 100%;
 }
 
 
