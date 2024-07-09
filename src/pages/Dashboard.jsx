@@ -1,17 +1,23 @@
+/*import Layout from './Layoutdashboard'; */
 import React from 'react'
-import Layout from './Layoutdashboard';
+import {Sidebar} from '../components/Sidebar';
+import Content from './Content';
+import { Outlet } from 'react-router-dom';
+
 import Card from './Card'
 import './Dashboard.css';
 
 export const Dashboard = () => {
 
     return (
+      
       <div className="dashboard">
-      <Layout>
-        <Card title="Card 1" content="Contenido del card 1." />
-        <Card title="Card 2" content="Contenido del card 2." />
-        <Card title="Card 3" content="Contenido del card 3." />
-      </Layout>
+        <Sidebar/>
+
+        <div className="dashboard--content">
+           <Content/>
+        </div>
+
       </div>
     )
     

@@ -6,6 +6,8 @@
   padding: 2rem;
   text-align: center; */
   background-color: aqua;
+  width: 100vw; /* Asegura que el contenedor principal ocupe el 100% del ancho de la ventana */
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
 /*

@@ -3,18 +3,20 @@
   gap: 20px;
   align-items: center;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .card {
-  flex: 1;
+  flex: 1 1 200px;
   background: #dde6ed;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 20px;
   transition: 0.5s ease-in-out;
+  min-height: 200px;
 }
 
 .card:hover {
@@ -31,14 +33,42 @@
   padding: 20px;
   border-radius: 20px;
   color: #969393;
+ width: 100%;
+
+
 }
 
 .card--title {
   background: #ffffffc0;
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
   font-size: 14px;
-  color: #526d82;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 10px 0;
+  width: 100%;
   border-radius: 10px;
+  color: #526d82;
+  height: 60px; 
+  text-align: center;
+  flex-grow: 1; 
+  overflow: hidden; 
+}
+
+
+
+@media (max-width: 1024px) {
+  .card {
+    max-width: calc(50% - 20px); /* Ajusta el ancho de las tarjetas en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: calc(100% - 20px); /* Ajusta el ancho de las tarjetas en pantallas pequeñas */
+  }
+
+  .card--cover {
+    font-size: 2rem; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    padding: 10px; /* Reduce el padding en pantallas pequeñas */
+  }
 }

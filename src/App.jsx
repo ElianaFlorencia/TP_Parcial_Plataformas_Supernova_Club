@@ -1,9 +1,7 @@
-/*import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg' */
 
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 //Paginas//
 import { Inicio } from './pages/Inicio'
 import { Contacto } from './pages/Contacto'
@@ -14,6 +12,9 @@ import { Dashboard } from './pages/Dashboard'
 
 //Menu//
 import { Menu } from './components/Menu'
+
+// Dashboard --> Usuarios //
+import  {Usuarios} from './pages/Usuarios'
 
 //Contextos//
 import {AuthProvider} from './context/AuthContext'
@@ -69,7 +70,10 @@ export const App = () => {
                 </ProtectedRoute>
                 
                 
-                } />
+              } />
+              
+              <Route path='/Usuarios' element={<Usuarios />} />
+
             </Routes>   
         </div>
    </BrowserRouter>
