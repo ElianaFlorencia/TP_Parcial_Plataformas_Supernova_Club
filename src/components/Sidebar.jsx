@@ -1,6 +1,8 @@
 import React from 'react'
+import '../styles/Sidebar.css';
+
 import { BiBookAlt, BiHome, BiMessage, BiSolidReport, BiStats, BiTask, BiHelpCircle } from 'react-icons/bi';
-import './Sidebar.css';
+
 
 
 import { Link, useNavigate } from "react-router-dom";

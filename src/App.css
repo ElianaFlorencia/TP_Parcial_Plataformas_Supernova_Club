@@ -5,9 +5,17 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center; */
-  background-color: aqua;
-  width: 100vw; /* Asegura que el contenedor principal ocupe el 100% del ancho de la ventana */
+  background-color:#dde6ed;
   overflow-x: hidden; /* Evita el desbordamiento horizontal */
+  width: 100vw;
+  height:100vh;
+  
+ 
+
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  overflow-x: hidden;
+  
 }
 
 /*
@@ -49,25 +57,3 @@
 
 */
 
-/*DASHBOARD CSS
-.columns {
-  display: flex;
-  margin-top: 1.5rem; /* equivalente a mt-6 en Bulma 
-  min-height: 50vh;
-} 
-
-.column {
-  flex: 1;
-}
-
-.sidebar {
-  flex: 0 0 20%; /* Ancho de la columna del sidebar 
-}
-
-.main-content {
-  flex: 1;
-  background-color: #f5f5f5; /* Color de fondo equivalente a has-background-light 
-  padding: 1rem;
-}
-
-*/

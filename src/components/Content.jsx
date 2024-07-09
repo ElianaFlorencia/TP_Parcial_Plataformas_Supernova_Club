@@ -1,6 +1,7 @@
 import React from 'react'
+import '../styles/Content.css';
+
 import { Routes, Route } from 'react-router-dom';
-import './Content.css';
 import Card from './Card';
 import Listausuarios from './Listausuarios';
 

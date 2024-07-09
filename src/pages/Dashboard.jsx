@@ -1,11 +1,11 @@
-/*import Layout from './Layoutdashboard'; */
 import React from 'react'
-import {Sidebar} from '../components/Sidebar';
-import Content from './Content';
-import { Outlet } from 'react-router-dom';
+import '../styles/Dashboard.css';
 
-import Card from './Card'
-import './Dashboard.css';
+import {Sidebar} from '../components/Sidebar';
+import Content from '../components/Content';
+import { Outlet } from 'react-router-dom';
+import Card from '../components/Card'
+
 
 export const Dashboard = () => {
 

@@ -1,8 +1,10 @@
 import React from 'react';
+import '../styles/Card.css';
+
 import { IoFootball } from "react-icons/io5";
 import { FaSwimmer } from "react-icons/fa";
 import { GiRollerSkate } from "react-icons/gi";
-import './Card.css'; // Importa el CSS específico para este componente
+
 
 const courses = [
   { 

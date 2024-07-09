@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Inicio } from './pages/Inicio'
 import { Contacto } from './pages/Contacto'
 import { Micuenta } from './pages/Micuenta'
-import { Login } from './pages/Login'
+import { Login } from './components/Login'
 import { Dashboard } from './pages/Dashboard'
 
 
@@ -14,7 +14,7 @@ import { Dashboard } from './pages/Dashboard'
 import { Menu } from './components/Menu'
 
 // Dashboard --> Usuarios //
-import  {Usuarios} from './pages/Usuarios'
+import  {Usuarios} from './components/Usuarios'
 
 //Contextos//
 import {AuthProvider} from './context/AuthContext'
