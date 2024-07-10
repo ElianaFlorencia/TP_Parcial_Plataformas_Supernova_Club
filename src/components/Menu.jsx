@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { useAuth } from "../context/AuthContext"
 import { useNavigate } from "react-router-dom";
+import '../styles/Menu.css';
 
 
 export const Menu = () => {
@@ -15,7 +16,7 @@ export const Menu = () => {
     }
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light navbar custom">
         <div className="container-fluid">
             <a className="navbar-brand" href="#">LOGO</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,16 +27,16 @@ export const Menu = () => {
                 <li className="nav-item">
                 <Link className="nav-link" to= "/"> Inicio </Link>
                 </li>
-                <li className="nav-item">
+                {/*<li className="nav-item">
                 <Link className="nav-link" to= "/Contacto"> Contacto </Link>
-                </li>
+                </li> */}
                 
                 <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="/Micuenta" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Mi Cuenta 
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <Link className="dropdown-item" to= "/Micuenta"> Perfil </Link>
+                  {/*  <Link className="dropdown-item" to= "/Micuenta"> Perfil </Link> */}
                     { 
                     (logueado)
                     ?   <>
