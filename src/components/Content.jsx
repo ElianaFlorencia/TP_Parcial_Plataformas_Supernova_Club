@@ -11,7 +11,7 @@ export const Content = () => {
     <div className='content'>
       <Routes>
         <Route path='/'element={<Card/>} />
-        <Route path='Usuarios'element={<Listausuarios/>} />
+        <Route path='/Usuarios'element={<Listausuarios/>} />
       </Routes>
      
     </div>
