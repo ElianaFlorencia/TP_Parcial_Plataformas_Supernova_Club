@@ -1,8 +1,8 @@
 import React from 'react'
 import '../styles/Sidebar.css';
 
-import { BiBookAlt, BiHome, BiMessage, BiSolidReport, BiStats, BiTask, BiHelpCircle } from 'react-icons/bi';
-
+import { BiBookAlt, BiHome, BiMessage, BiSolidReport, BiStats, BiTask, BiHelpCircle,} from 'react-icons/bi';
+import { GiSupersonicArrow } from "react-icons/gi";
 
 
 import { Link, useNavigate } from "react-router-dom";
@@ -11,8 +11,8 @@ export const Sidebar = () => {
   return (
     <div className='sidemenu'> 
         <div className="sidemenulogo">
-            <BiBookAlt className="sidemenulogo-icons"/>
-            <h2>EduFlex</h2>
+            <GiSupersonicArrow  className="sidemenulogo-icons"/>
+            <h3>Bienvenido</h3>
         </div>
         
         <div className="sidemenu--list">

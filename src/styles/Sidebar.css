@@ -3,13 +3,13 @@
     flex-direction:column;
     gap: 2.3rem;
     height: 94vh;
-    background-color: rgb(243, 120, 202);    
+    /*background-color: rgb(243, 120, 202);    */
 }
 
 .sidemenulogo{
     text-align: center;
     padding: 20px;
-    color: #2326dd;
+    color: #ececec;
     align-items:center;
     display: flex;
     gap: 20px;
@@ -35,10 +35,10 @@
     padding: 10px;
     border-radius: 10px;
     transition: 0.3 ease-in-out;
-    color: #27374d;
+    color: #c5c5c5;
 }
 
 .sidemenu--list .item:hover{
-    background: #27374d;
+    background: #3d3d3d2f; 
     color: #dde6ed;
 }
