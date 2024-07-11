@@ -1,20 +1,14 @@
-
-import React, { useEffect } from "react";
-import Listausuarios from './Listausuarios';
-import Content from './Content';
-import { useNavigate } from "react-router-dom";
-
+import React from 'react'
+import Content from './Content'
+import Listausuarios from './Listausuarios'
+import Sidebar from './Sidebar'
 
 export const Usuarios = () => {
-  return (
-    <Content>
-    <div className="usuarios">
-       
-        <Listausuarios/>
-
-      </div>
-     </Content>
-  )
+    return (
+        <Content>
+            <Listausuarios />
+        </Content>
+    )
 }
 
 export default Usuarios
