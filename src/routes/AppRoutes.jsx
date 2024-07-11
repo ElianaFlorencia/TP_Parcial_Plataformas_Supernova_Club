@@ -7,6 +7,7 @@ import { Login } from '../components/Login'
 import { Micuenta } from '../pages/Micuenta'
 import Usuarios from '../components/Usuarios'
 import Futbol from '../components/Futbol'
+import Message from '../components/Message'
 
 const AppRoutes = () => {
     return (
@@ -32,6 +33,8 @@ const AppRoutes = () => {
                         </ProtectedRoute>
                     }
                 />
+
+               <Route path="/Message" element={<Message />} />
             </Routes>
         </div>
     )
