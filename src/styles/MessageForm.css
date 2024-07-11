@@ -1,0 +1,75 @@
+
+.form--container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+  
+#form {
+    background-color: #ffffff; /* Color de fondo del formulario */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Aumenta el ancho máximo */
+    min-height: 500px; /* Altura mínima */
+    color: #333; /* Color del texto del formulario */
+    overflow-y: auto; 
+    align-items: center;
+    flex-direction: column;
+    position: relative; /* Permite el posicionamiento relativo */
+    margin: 0 auto; /* Centra horizontalmente en pantallas grandes */
+}
+  
+#form h2 {
+    color: #007bff; /* Color del título */
+    margin-bottom: 20px; /* Espacio bajo el título */
+}
+  
+#form .mb-4 label {
+    color: #555; /* Color del texto de los labels */
+}
+  
+#form .my-4 {
+    color: #fff; /* Color del texto del botón */
+}
+  
+#form input,
+#form textarea {
+  width: 100%; /* Ancho completo del campo de entrada */
+   /* Ancho máximo para los campos de entrada */
+ 
+}
+
+#form textarea {
+  width: 100%; /* Ancho completo */
+  height: 100px; /* Altura fija del textarea */
+  padding: 10px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 5px; /* Borde redondeado */
+  resize: none; /* Evita que el usuario cambie el tamaño */
+  overflow-y: auto; /* Mostrar barra de desplazamiento vertical si es necesario */
+}
+
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Ancho completo del botón */
+    margin-top: 10px; /* Espacio superior para separación */
+}
+  
+.btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+
+ 
+
