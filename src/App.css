@@ -1,21 +1,16 @@
-
-
 #root {
-  /*max-width: 1280px;
+    /*max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center; */
-  background-color:#202020;
-  overflow-x: hidden; /* Evita el desbordamiento horizontal */
-  width: 100vw;
-  height:100vh;
+    background-color: #202020;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    width: 100vw;
+    height: 100vh;
 
- 
-
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  overflow-x: hidden;
-  
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    overflow-x: hidden;
 }
 
 /*
@@ -56,4 +51,3 @@
 }
 
 */
-
