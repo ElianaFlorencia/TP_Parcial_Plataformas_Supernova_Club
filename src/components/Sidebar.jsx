@@ -10,6 +10,9 @@ import {
     BiTask,
     BiHelpCircle,
 } from 'react-icons/bi'
+import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
+import { MdOutlineDashboardCustomize } from "react-icons/md";
+import { IoBarbellOutline } from "react-icons/io5";
 import { GiSupersonicArrow } from 'react-icons/gi'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
@@ -26,7 +29,7 @@ export const Sidebar = () => {
 
             <div className="sidemenu--list">
                 <Link to="/dashboard" className="item">
-                    <BiHome className="sidemenulogo-icons" />
+                    <MdOutlineDashboardCustomize className="sidemenulogo-icons" />
                     Dashboard
                 </Link>
 
@@ -38,23 +41,24 @@ export const Sidebar = () => {
                 )}
 
                 <Link to="#" className="item">
-                    <BiSolidReport className="sidemenulogo-icons" />
-                    Report
+                    <HiOutlineDocumentArrowDown className="sidemenulogo-icons" />
+                    Pagos
                 </Link>
-
+                {user.role !== 'admin' && (
                 <Link to="#" className="item">
-                    <BiStats className="sidemenulogo-icons" />
-                    Stats
+                    <IoBarbellOutline className="sidemenulogo-icons" />
+                    Reservas
                 </Link>
+                )}
 
                 <Link to="#" className="item">
                     <BiMessage className="sidemenulogo-icons" />
-                    Message
+                    Mensaje
                 </Link>
 
                 <Link to="#" className="item">
                     <BiHelpCircle className="sidemenulogo-icons" />
-                    Help
+                    Ayuda
                 </Link>
             </div>
         </div>
