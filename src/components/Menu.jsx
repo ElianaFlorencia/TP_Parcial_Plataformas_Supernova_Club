@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import { useNavigate } from 'react-router-dom'
+import { GiSupersonicArrow } from 'react-icons/gi';
 import '../styles/Menu.css'
 
 export const Menu = () => {
@@ -17,7 +18,8 @@ export const Menu = () => {
         <nav className="navbar navbar-expand-lg navbar-light bg-light navbar custom">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
-                    LOGO
+                <GiSupersonicArrow size={30} />
+                <span className="navbar-title">CIT CLUB</span>
                 </a>
                 <button
                     className="navbar-toggler"
