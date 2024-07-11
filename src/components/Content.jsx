@@ -1,21 +1,20 @@
 import React from 'react'
-import '../styles/Content.css';
+import '../styles/Content.css'
+import {Menu} from './Menu'
+import Sidebar from './Sidebar'
 
-import { Routes, Route } from 'react-router-dom';
-import Card from './Card';
-import Listausuarios from './Listausuarios';
-
-
-export const Content = () => {
-  return (
-    <div className='content'>
-      <Routes>
-        <Route path='/'element={<Card/>} />
-        <Route path='/Usuarios'element={<Listausuarios/>} />
-      </Routes>
-     
-    </div>
-  )
+export const Content = ({ children }) => {
+    return (
+        <>
+            <Menu />
+            <div className="dashboard">
+                <Sidebar />
+                <div className="dashboard--content">
+                    <div className="content">{children}</div>
+                </div>
+            </div>
+        </>
+    )
 }
 
 export default Content
