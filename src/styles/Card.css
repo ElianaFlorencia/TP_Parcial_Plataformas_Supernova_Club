@@ -8,7 +8,7 @@
 
 .card {
     flex: 1 1 calc(33.333% - 20px);
-    background: #dde6ed;
+    background: #3891f7da;
     padding: 20px;
     border-radius: 20px;
     display: flex;
@@ -17,7 +17,7 @@
     gap: 20px;
     transition: 0.5s ease-in-out;
     min-height: 200px;
-    border: none;
+    
 }
 
 .card:hover {
@@ -33,28 +33,31 @@
     justify-content: center;
     padding: 20px;
     border-radius: 20px;
-    color: #969393;
-    width: 100%; /*iconos*/
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
-    max-width: 100px; /* Ajusta el tamaño máximo según sea necesario */
-    max-height: 100px; /* Ajusta el tamaño máximo según sea necesario */
+    color: #dadadada;
+    width: 100%;
+    box-sizing: border-box;
+    /* Incluye el padding en el ancho total */
+    max-width: 100px;
+    /* Ajusta el tamaño máximo según sea necesario */
+    max-height: 100px;
+    /* Ajusta el tamaño máximo según sea necesario */
 }
 
+
 .card--title {
-    background: #ffffffc0;
-    font-size: 12px;
-    display: flex;
+    background: #202020; 
+    font-size: 5px;
+    /*display: flex; */
     align-items: center;
     justify-content: center;
     padding: 10px 0;
     width: 100%;
     border-radius: 10px;
-    color: #526d82;
+    color: #dadadada;
     height: 60px;
     text-align: center;
     flex-grow: 1;
     overflow: hidden;
-
     margin: 0 auto; /*titulos de deportes*/
     max-width: 100%;
 }

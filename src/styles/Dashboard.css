@@ -12,9 +12,9 @@
     box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total del elemento */
 }
 .dashboard--content {
-    background-color: #3d3d3d2f;
+    /*background-color: #3d3d3d2f; */
     flex: 1;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 2rem;
     display: flex;
     gap: 1.5rem;
