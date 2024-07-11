@@ -39,6 +39,17 @@
 }
 
 .sidemenu--list .item:hover {
-    background: #3d3d3d2f;
+    background: #3891f7da;
     color: #dde6ed;
+}
+
+.sidemenulogo  {
+    align-items: center;
+    color: aqua;
+
+}
+
+#tituloSidebar {
+    font-weight: 600;
+    color:red;
 }

@@ -20,8 +20,8 @@ export const Sidebar = () => {
     return (
         <div className="sidemenu">
             <div className="sidemenulogo">
-                <GiSupersonicArrow className="sidemenulogo-icons" />
-                <h3>Bienvenido</h3>
+               {/* <GiSupersonicArrow className="sidemenulogo-icons" /> */}
+                <h3 id="tituloSidebar">Bienvenido</h3>
             </div>
 
             <div className="sidemenu--list">
@@ -37,25 +37,25 @@ export const Sidebar = () => {
                     </Link>
                 )}
 
-                <a href="#" className="item">
+                <Link to="#" className="item">
                     <BiSolidReport className="sidemenulogo-icons" />
                     Report
-                </a>
+                </Link>
 
-                <a href="#" className="item">
+                <Link to="#" className="item">
                     <BiStats className="sidemenulogo-icons" />
                     Stats
-                </a>
+                </Link>
 
-                <a href="#" className="item">
+                <Link to="#" className="item">
                     <BiMessage className="sidemenulogo-icons" />
                     Message
-                </a>
+                </Link>
 
-                <a href="#" className="item">
+                <Link to="#" className="item">
                     <BiHelpCircle className="sidemenulogo-icons" />
                     Help
-                </a>
+                </Link>
             </div>
         </div>
     )
