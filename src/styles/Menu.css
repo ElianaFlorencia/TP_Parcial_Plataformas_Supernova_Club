@@ -1,0 +1,36 @@
+.custom {
+    background-color: #388cdb !important; /* Cambia este color al que desees */
+    color: #ace01c !important;
+  }
+  
+  .custom .navbar-brand,
+  .custom .nav-link {
+    color: #15e248 !important; /* Color del texto blanco */
+  }
+  
+  .custom .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  
+  .custom .dropdown-menu {
+  background-color: #e71e7c !important; /* Cambia este color al que desees */
+  color: #ffffff !important;
+}
+
+.custom .dropdown-item {
+  color: #ffffff !important; /* Color del texto blanco */
+}
+
+.custom .dropdown-item:hover,
+.custom .dropdown-item:focus {
+  background-color: #d0176c !important; /* Color de fondo al pasar el ratón */
+  color: #ffffff !important; /* Color del texto al pasar el ratón */
+}
+
+
+
+.navbar-title {
+  margin-right: 15px;
+  margin-left: 10px;
+}

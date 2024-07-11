@@ -1,12 +1,3 @@
 export const Contacto = () => {
-
-    return (
-        <div class="portadaContacto" >
-
-            <h1> Contacto </h1>
-
-        </div>
-    )    
-
-
+    return <h1> Contacto </h1>
 }

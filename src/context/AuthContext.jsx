@@ -1,28 +1,41 @@
-import { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from 'react'
 
-const AuthContext = createContext ();
+const AuthContext = createContext()
 
-export const AuthProvider = ({children}) => {
- 
-    const [logueado, setLogueado] = useState (false);
+export const AuthProvider = ({ children }) => {
+    const [user, setUser] = useState(null)
+    const [logueado, setLogueado] = useState(false)
 
-    const login = () => {
-        setLogueado (true);
+    const login = (email, password) => {
+        return new Promise((resolve, reject) => {
+            // Simulación de autenticación
+            if (email === 'admin@example.com' && password === 'admin') {
+                const user = { email, role: 'admin' }
+                setUser(user)
+                resolve(user)
+                setLogueado(true)
+            } else if (email === 'user@example.com' && password === 'user') {
+                const user = { email, role: 'user' }
+                setUser(user)
+                resolve(user)
+                setLogueado(true)
+            } else {
+                reject('Credenciales incorrectas')
+            }
+        })
     }
 
     const logout = () => {
-        setLogueado (false);
+        setUser(null)
     }
 
     return (
-         <AuthContext.Provider value= {{logueado, login, logout}} >
-            { children }
-         </AuthContext.Provider>
-
+        <AuthContext.Provider value={{ user, login, logout, logueado }}>
+            {children}
+        </AuthContext.Provider>
     )
 }
 
 export const useAuth = () => {
-    return useContext (AuthContext);
-
+    return useContext(AuthContext)
 }
