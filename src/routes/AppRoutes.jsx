@@ -8,7 +8,7 @@ import { Micuenta } from '../pages/Micuenta'
 import Usuarios from '../components/Usuarios'
 import Message from '../components/Message'
 import Reserva from '../components/Reserva'
-import Futbol from '../components/Futbol'
+
 
 const AppRoutes = () => {
     return (
@@ -26,14 +26,14 @@ const AppRoutes = () => {
                         </ProtectedRoute>
                     }
                 />
-                <Route
+               {/*} <Route
                     path="/dashboard/futbol"
                     element={
                         <ProtectedRoute>
                             <Futbol />
                         </ProtectedRoute>
                     }
-                />
+                /> */}
 
                <Route path="/Message" element={<Message />} />
                <Route path="/Reserva" element={<Reserva />} />
