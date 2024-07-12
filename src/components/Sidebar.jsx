@@ -45,13 +45,13 @@ export const Sidebar = () => {
                     Pagos
                 </Link>
                 {user.role !== 'admin' && (
-                <Link to="#" className="item">
+                <Link to="/Reserva" className="item">
                     <IoBarbellOutline className="sidemenulogo-icons" />
                     Reservas
                 </Link>
                 )}
 
-                <Link to="#" className="item">
+                <Link to="/Message" className="item">
                     <BiMessage className="sidemenulogo-icons" />
                     Mensaje
                 </Link>

@@ -6,8 +6,9 @@ import { ProtectedRoute } from '../context/ProtectedRoute'
 import { Login } from '../components/Login'
 import { Micuenta } from '../pages/Micuenta'
 import Usuarios from '../components/Usuarios'
-import Futbol from '../components/Futbol'
 import Message from '../components/Message'
+import Reserva from '../components/Reserva'
+import Futbol from '../components/Futbol'
 
 const AppRoutes = () => {
     return (
@@ -35,6 +36,7 @@ const AppRoutes = () => {
                 />
 
                <Route path="/Message" element={<Message />} />
+               <Route path="/Reserva" element={<Reserva />} />
             </Routes>
         </div>
     )
