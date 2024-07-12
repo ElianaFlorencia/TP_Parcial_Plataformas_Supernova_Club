@@ -137,10 +137,11 @@ export const ReservaForm = () => {
                 className='form-control'
               />
             </div>
-    
-            <button className='btn btn-primary btn-block my-4' type='submit'>
+            <div className='button-container-reserva'>
+            <button className='btn btn-primary custom-btn-reserva' type='submit'>
               Enviar
             </button>
+            </div>
           </form>
         </div>
       );

@@ -6,6 +6,16 @@
 
 
 
+.custom-btn-reserva{
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Ancho completo del botón */
+  margin-top: 10px; /* Espacio superior para separación */
+}
 
 
 
