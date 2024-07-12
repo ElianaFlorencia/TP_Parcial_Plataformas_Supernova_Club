@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import '../styles/Sidebar.css'
 
 import {
+    
     BiBookAlt,
     BiHome,
     BiMessage,
@@ -44,8 +45,9 @@ export const Sidebar = () => {
                     <HiOutlineDocumentArrowDown className="sidemenulogo-icons" />
                     Pagos
                 </Link>
+                
                 {user.role !== 'admin' && (
-                <Link to="#" className="item">
+                <Link to="/Reservas" className="item">
                     <IoBarbellOutline className="sidemenulogo-icons" />
                     Reservas
                 </Link>
@@ -65,4 +67,4 @@ export const Sidebar = () => {
     )
 }
 
-export default Sidebar
+export default Sidebar;

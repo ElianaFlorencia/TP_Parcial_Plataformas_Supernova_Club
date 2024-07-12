@@ -8,17 +8,34 @@ export const Login = () => {
     const navigate = useNavigate()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [error, setError] = useState('')
 
-    const handlerLogin = (values) => {
+    const handlerLogin = (e) => {
+        e.preventDefault()
         login(email, password)
-        navigate('/dashboard')
+            .then((user) => {
+                if (user.role === 'admin') {
+                    navigate('/Dashboard')
+                } else if (user.role === 'user') {
+                    navigate('/Dashboard')
+                } else if (user.role === 'user') {
+                    navigate('/Reservas')
+                }else {
+                    setError('Role no válido')
+                }
+            })
+            .catch((err) => {
+                setError('Credenciales incorrectas, vuelva ingresar los datos.')
+            })
     }
 
     return (
         <div className="main_container">
             <div className="wrapper">
-                <form onSubmit={(e) => e.preventDefault()}>
+                <form onSubmit={handlerLogin}>
                     <h2>Login</h2>
+
+                    {error && <p className="error">{error}</p>}
 
                     <div className="input-box mb-3">
                         <label
@@ -33,6 +50,7 @@ export const Login = () => {
                             className="form-control"
                             id="exampleInputEmail1"
                             aria-describedby="emailHelp"
+                            value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
@@ -48,6 +66,7 @@ export const Login = () => {
                             type="password"
                             className="form-control"
                             id="exampleInputPassword1"
+                            value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
                     </div>
@@ -60,19 +79,13 @@ export const Login = () => {
                         <a href="#"> Forgot password?</a>
                     </div>
 
-                    <button
-                        onClick={(e) => handlerLogin(e)}
-                        type="submit"
-                        className="btn btn-primary"
-                    >
+                    <button type="submit" className="btn btn-primary">
                         Submit
                     </button>
-
-                    {/* <div className="register-link">
-                    <p>Don't have an account? <a href="#">Register</a></p>
-                </div> */}
                 </form>
             </div>
         </div>
     )
 }
+
+export default Login;

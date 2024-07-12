@@ -1,0 +1,78 @@
+.UsuarioListContain {
+    width: auto;
+    height:auto;
+    background-color: antiquewhite;
+   padding: 10px;
+   
+}
+
+.containerForm {
+   
+    height: 150px;
+    padding: 10px;
+    
+    margin: 20px;
+    
+   display: block;
+    background-color: aqua;
+    border: 1px solid rgb(199, 65, 65);
+    border-radius: 5px;
+
+    width: 555px;
+    height: 255px;
+    
+    
+  }
+
+    input {
+        width: 480px;
+        height: 40px; 
+        margin: 5px;
+        padding: 10px;
+        border: 1px solid rgb(199, 65, 65);
+        border-radius: 8px;
+        display: flex;
+        flex: 1;
+
+    }
+
+    button {
+
+        width: 70px;
+        height: 60px;
+     
+        padding: 10px;
+        border: none;
+        background-color: #28a745;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+        float:inline-end;
+        
+        
+
+    }
+
+    button:hover {
+        background-color: #0d481a;
+    }
+
+    table {
+        width: 100%;
+        height: auto;
+        border-collapse: collapse;
+
+    }
+
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+
+    th {
+        background-color: #007bff;
+        color: white;
+    }
