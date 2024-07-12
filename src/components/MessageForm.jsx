@@ -1,30 +1,44 @@
 import React, { useState } from 'react';
 import { MDBInput, MDBTextArea, MDBCheckbox, MDBBtn } from 'mdb-react-ui-kit';
+import Swal from 'sweetalert2'
 import '../styles/MessageForm.css'
 
 const MessageForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-    sendCopy: false
-  });
-
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData({
-      ...formData,
-      [name]: type === 'checkbox' ? checked : value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    console.log(formData);
-  };
-
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
+    
+      const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+          ...formData,
+          [name]: value
+        });
+      };
+    
+      const handleSubmit = (e) => {
+        e.preventDefault();
+    
+        // Aquí iría el código para enviar los datos del formulario, por ejemplo:
+        // Simplemente mostramos la alerta como ejemplo
+        Swal.fire({
+          position: 'top-center',
+          icon: 'success',
+          title: '¡Tu mensaje ha sido enviado con éxito!',
+          showConfirmButton: false,
+          timer: 3500,
+          customClass: {
+            popup: 'medium-swal', // Clase CSS para el tamaño personalizado
+          },
+          width: '30rem', // Ancho personalizado del cuadro de diálogo
+        });
+    
+        // Puedes también resetear el formulario después de enviarlo
+        e.target.reset();
+      };
   return (
     <div className= 'form--container'>
     <form id='form' className='messageformtitle'  onSubmit={handleSubmit}>
