@@ -1,78 +1,143 @@
-.usuarioListContain {
-    width: auto;
-    height:auto;
-    background-color: antiquewhite;
-   padding: 10px;
 
+.usuarioListContain {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
-.containerForm {
+.containerFormUsuarios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
 
-    height: 150px;
+.containerFormUsuarios input[type="text"],
+.containerFormUsuarios input[type="email"] {
+    flex: 1;
     padding: 10px;
-
-    margin: 20px;
-
-   display: block;
-    background-color: aqua;
-    border: 1px solid rgb(199, 65, 65);
+    border: 1px solid #ddd;
     border-radius: 5px;
+}
 
-    width: 555px;
-    height: 255px;
+.containerFormUsuarios button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.containerFormUsuarios button:hover {
+    background-color: #0056b3;
+}
+
+.table-users {
+    width: 100%;
+    border-collapse: collapse;
+    max-height: 300px; 
+    overflow-y: auto; 
+   
+}
+
+.table-users thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table-users th, .table-users td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
 
 
-  }
-
-    input {
-        width: 480px;
-        height: 40px; 
-        margin: 5px;
-        padding: 10px;
-        border: 1px solid rgb(199, 65, 65);
-        border-radius: 8px;
-        display: flex;
-        flex: 1;
-
-    }
-
-    button {
-
-        width: 70px;
-        height: 60px;
-
-        padding: 10px;
-        border: none;
-        background-color: #28a745;
-        color: white;
-        border-radius: 5px;
-        cursor: pointer;
-        margin: 10px;
-        float:inline-end;
+.table-users tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
 
 
 
-    }
 
-    button:hover {
-        background-color: #0d481a;
-    }
+.table-header-usuarios {
+    background-color: #007bff;
+    color: #fff;
+}
 
-    table {
-        width: 100%;
-        height: auto;
-        border-collapse: collapse;
+.table-header-row-usuarios {
+    background-color: #007bff;
+}
 
-    }
+.table-header-no-us, 
+.table-header-name-us, 
+.table-header-lastname-us, 
+.table-header-email-us, 
+.table-header-role-us, 
+.table-header-actions-us {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
 
-    th,
-    td {
-        padding: 10px;
-        border: 1px solid #ccc;
-        text-align: center;
-    }
+table th,
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
 
-    th {
-        background-color: #007bff;
-        color: white;
-    }
+table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #ddd;
+}
+
+table button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+table button:hover {
+    background-color: #218838;
+}
+
+table button:last-child {
+    background-color: #dc3545;
+}
+
+table button:last-child:hover {
+    background-color: #c82333;
+}
+
+
+.btn-crear-usuario {
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.btn-crear-usuario:hover {
+    background-color: #0056b3; }
