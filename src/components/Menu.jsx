@@ -19,7 +19,7 @@ export const Menu = () => {
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
                 <GiSupersonicArrow size={30} />
-                <span className="navbar-title">CIT CLUB</span>
+                <span className="navbar-title">Supernova Club</span>
                 </a>
                 <button
                     className="navbar-toggler"
