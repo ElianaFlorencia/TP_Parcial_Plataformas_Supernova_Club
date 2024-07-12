@@ -14,7 +14,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px; /* Aumenta el ancho máximo */
-    min-height: 500px; /* Altura mínima */
+    min-height: 400px; /* Altura mínima */
     color: #333; /* Color del texto del formulario */
     overflow-y: auto; 
     align-items: center;
@@ -43,6 +43,7 @@
  
 }
 
+
 #form textarea {
   width: 100%; /* Ancho completo */
   height: 100px; /* Altura fija del textarea */
@@ -54,8 +55,14 @@
   overflow-y: auto; /* Mostrar barra de desplazamiento vertical si es necesario */
 }
 
+.button-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el botón */
+  width: 100%; /* Asegura que el contenedor tenga el mismo ancho que el formulario */
+}
 
-.btn-primary {
+
+.custom-btn-message{
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -64,6 +71,7 @@
     cursor: pointer;
     width: 100%; /* Ancho completo del botón */
     margin-top: 10px; /* Espacio superior para separación */
+
 }
   
 .btn-primary:hover {

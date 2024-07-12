@@ -40,7 +40,7 @@ const MessageForm = () => {
         e.target.reset();
       };
   return (
-    <div className= 'form--container'>
+    <div className= 'message--form--container'>
     <form id='form' className='messageformtitle'  onSubmit={handleSubmit}>
       <h2>Consultanos</h2>
 
@@ -79,10 +79,11 @@ const MessageForm = () => {
           rows='6' 
         />
     
-
-       <button className='btn btn-primary btn-block my-4' type='submit'>
-          Enviar
-        </button>
+        <div className='button-container'>
+          <button className='btn btn-primary custom-btn-message' type='submit'>
+            Enviar
+          </button>
+        </div>
     </form>
     </div>
   );
