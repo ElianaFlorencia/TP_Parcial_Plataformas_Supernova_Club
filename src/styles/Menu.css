@@ -1,11 +1,11 @@
 .custom {
-    background-color: #388cdb !important; /* Cambia este color al que desees */
+    background-color: #3a3c3d !important; 
     color: #ace01c !important;
   }
   
   .custom .navbar-brand,
   .custom .nav-link {
-    color: #15e248 !important; /* Color del texto blanco */
+    color: #dbdbdb !important; 
   }
   
   .custom .navbar-toggler {
@@ -14,18 +14,18 @@
   
   
   .custom .dropdown-menu {
-  background-color: #e71e7c !important; /* Cambia este color al que desees */
+  background-color: #3a3c3d !important; 
   color: #ffffff !important;
 }
 
 .custom .dropdown-item {
-  color: #ffffff !important; /* Color del texto blanco */
+  color: #ffffff !important; 
 }
 
 .custom .dropdown-item:hover,
 .custom .dropdown-item:focus {
-  background-color: #d0176c !important; /* Color de fondo al pasar el ratón */
-  color: #ffffff !important; /* Color del texto al pasar el ratón */
+  background-color: #3891f7da !important; 
+  color: #ffffff !important; 
 }
 
 

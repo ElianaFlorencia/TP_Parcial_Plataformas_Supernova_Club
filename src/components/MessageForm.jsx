@@ -22,7 +22,6 @@ const MessageForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validación de campos vacíos
     if (!formData.name || !formData.email || !formData.subject || !formData.message) {
       Swal.fire({
         icon: 'error',
@@ -52,7 +51,7 @@ const MessageForm = () => {
   };
 
   return (
-    <div className='message--form--container'>
+    <div className='form--container'>
       <form id='form' className='messageformtitle' onSubmit={handleSubmit}>
         <h2>Consultanos</h2>
 

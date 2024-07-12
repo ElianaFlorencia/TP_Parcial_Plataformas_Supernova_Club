@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
 
     const login = (email, password) => {
         return new Promise((resolve, reject) => {
-            // Simulación de autenticación
+          
             if (email === 'admin@example.com' && password === 'admin') {
                 const user = { email, role: 'admin' }
                 setUser(user)

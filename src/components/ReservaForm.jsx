@@ -45,9 +45,7 @@ export const ReservaForm = () => {
       const handleSubmit = (e) => {
         e.preventDefault();
     
-        // Aquí iría el código para enviar los datos del formulario
-    
-        // Mostrar la alerta de éxito con SweetAlert2
+       
         Swal.fire({
             position: 'top-center',
             icon: 'warning',
@@ -55,12 +53,12 @@ export const ReservaForm = () => {
             showConfirmButton: false,
             timer: 3500,
             customClass: {
-              popup: 'medium-swal', // Clase CSS para el tamaño personalizado
+              popup: 'medium-swal', 
             },
-            width: '30rem', // Ancho personalizado del cuadro de diálogo
+            width: '30rem', 
           });
       
-          // Puedes también resetear el formulario después de enviarlo
+  
           e.target.reset();
       };
     

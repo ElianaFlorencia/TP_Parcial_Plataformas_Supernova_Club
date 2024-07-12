@@ -1,7 +1,7 @@
 
 .form-label {
-  margin-bottom: 0px; /* Añade este margen inferior */
-  display: block; /* Asegura que el label esté en un bloque separado */
+  margin-bottom: 0px; 
+  display: block; 
 }
 
 
@@ -13,8 +13,8 @@
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  width: 100%; /* Ancho completo del botón */
-  margin-top: 10px; /* Espacio superior para separación */
+  width: 100%; 
+  margin-top: 10px; 
 }
 
 
