@@ -40,7 +40,7 @@ export const Sidebar = () => {
                     </Link>
                 )}
 
-                <Link to="#" className="item">
+                <Link to="/dashboard" className="item">
                     <HiOutlineDocumentArrowDown className="sidemenulogo-icons" />
                     Pagos
                 </Link>
@@ -56,7 +56,7 @@ export const Sidebar = () => {
                     Mensaje
                 </Link>
 
-                <Link to="#" className="item">
+                <Link to="/dashboard" className="item">
                     <BiHelpCircle className="sidemenulogo-icons" />
                     Ayuda
                 </Link>

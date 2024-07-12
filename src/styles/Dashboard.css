@@ -2,17 +2,17 @@
 .dashboard {
     background-color: #d8528ac0;
     padding: 20px;  Ajusta el padding según sea necesario 
-  }
-  */
+}
+*/
 
 .dashboard {
     display: flex;
     gap: 20px;
-    width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho disponible */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total del elemento */
+    width: 100%; 
+    box-sizing: border-box; 
 }
 .dashboard--content {
-    /*background-color: #3d3d3d2f; */
+   /* background-color: #67adfc23; */
     flex: 1;
     border-radius: 20px;
     padding: 2rem;
@@ -20,6 +20,6 @@
     gap: 1.5rem;
     justify-content: space-between;
     margin-top: 20px;
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total del elemento */
-    overflow: hidden; /* Evita el desbordamiento del contenido */
+    box-sizing: border-box; 
+    overflow: hidden; 
 }
